@@ -1,0 +1,18 @@
+/* За замовчуванням встановлюємо світлу тему */
+:root {
+    --background-color: #fff;
+    --text-color: #212529;
+  }
+  
+  /* Темна тема */
+  #themeToggle:checked ~ #themeSwitcher {
+    --background-color: #212529;
+    --text-color: #fff;
+  }
+  
+  /* Застосуємо стилі до елементів з урахуванням вибраної теми */
+  #themeSwitcher {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
